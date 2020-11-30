@@ -198,6 +198,6 @@ def test_calculatrice_romain_division_nombres():
     assert r.calculatrice_romain('/', "MCMXLIV", "IV") == "CDLXXXVI"
     assert r.calculatrice_romain('/', "XL", "V") == "VIII"
 
-def test_calculatrice_division_par_0():
+def test_calculatrice_romain_division_par_0():
     with pytest.raises(ZeroDivisionError):
         assert r.calculatrice_romain('/', "X", "")
